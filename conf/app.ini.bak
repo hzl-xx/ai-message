@@ -1,0 +1,62 @@
+<<<<<<< Updated upstream:conf/app.ini
+APP_ENV = release
+
+[app]
+PAGE_SIZE = 10
+JWT_SECRET = 23347$040412
+JWT_EXPIRE_TIME = 24
+
+[server]
+HTTP_PORT = 8888
+READ_TIMEOUT = 60
+WRITE_TIMEOUT = 60
+
+[database]
+TYPE = mysql
+USER = root
+PASSWORD = hz251013
+#127.0.0.1:3306
+HOST = 127.0.0.1:3306
+NAME = blog
+TABLE_PREFIX =
+CHARSET = utf8mb4
+
+[redis]
+HOST = 39.105.79.110:16379
+PASSWORD = 0fc02d524045429941cc15f59e41cb7be6c52
+SELECT = 15
+
+[mail]
+FROM = xiaoxiongwei@xinchanedu.com
+PASSWORD = qbqKqcEzvgeRAAcv
+=======
+APP_ENV = release
+
+[app]
+PAGE_SIZE = 10
+JWT_SECRET =
+JWT_EXPIRE_TIME = 24
+
+[server]
+HTTP_PORT = 8888
+READ_TIMEOUT = 60
+WRITE_TIMEOUT = 60
+
+[database]
+TYPE = mysql
+USER =
+PASSWORD =
+#127.0.0.1:3306
+HOST = 127.0.0.1:3306
+NAME = blog
+TABLE_PREFIX =
+CHARSET = utf8mb4
+
+[redis]
+HOST =
+PASSWORD =
+
+[mail]
+FROM =
+PASSWORD =
+>>>>>>> Stashed changes:conf/app.ini.bak

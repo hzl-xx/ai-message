@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package protos;
+
+message Message{
+    string type = 1;
+    Common common = 2;
+    Sentry sentry = 3;
+    Mail mail =4;
+}
+
+message Sentry {
+    string projectName = 1;
+    string level = 2;
+    string time = 3;
+    string message = 4;
+    string href = 5;
+    string type = 6;
+}
+
+message Common {
+    string type = 1;
+    string message = 2;
+}
+message Mail {
+    string title = 1;
+    string from = 2;
+    string to = 3;
+    string message = 4;
+    string password = 5;
+    string type = 6;
+
+}
+message Reponse{
+    int32 code = 1;
+    string msg =2;
+}
+
+service SendMessageService{
+    rpc SendMessage(Message) returns(Reponse);
+}

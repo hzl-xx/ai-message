@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package protos;
+
+service Auth {
+    rpc GetToken(Key) returns (Response) {}
+    rpc ValidateToken(Token) returns (Response) {}
+}
+
+message Key {
+    string key = 1;
+}
+
+message Token {
+    string token = 1;
+}
+
+message Response {
+    int32 code = 1;
+    string message = 2;
+    bool valid = 3;
+    Token token = 4;
+}

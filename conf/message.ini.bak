@@ -1,0 +1,22 @@
+[qywx_server]
+SERVER_NAME =
+HOST =
+
+[company_wechat]
+AGENTID =
+SECRET =
+CORPID =
+
+[redis]
+HOST = 127.0.0.1:6379
+
+[jwt_key]
+KEY =
+
+[rabbit_mq]
+RABBMITMQ_HOST =
+RABBMITMQ_NAME =
+
+[mail]
+FROM =
+PASSWORD = 

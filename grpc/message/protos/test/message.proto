@@ -1,0 +1,21 @@
+syntax="proto3";
+
+message MessageRequest{
+    int32 type = 1;
+    string title= 2;
+    string content = 3;
+}
+
+message MessageResponse{
+    int32 code = 1;
+    string msg = 2;
+}
+
+message ConsumeRequest{}
+
+message ConsumeResponse{}
+
+service MessageService{
+    rpc SendMessage(MessageRequest) returns (MessageResponse);
+    rpc ConsumeMessage(ConsumeRequest) returns (ConsumeResponse);
+}
